@@ -1,0 +1,22 @@
+{% extends 'layouts/header-footer-2.html'%}
+{% block content %}
+<style>
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  border: none;
+  text-align: center;
+  color: #444;
+}
+
+</style>
+<main>
+  {% load static %}
+  <img src="{% static 'images/work.gif' %}" width="300px" height="250px">
+  <h1>Estamos trabajando en esta seccion!</h1>
+</main>
+{% endblock %}

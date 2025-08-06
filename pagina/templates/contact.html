@@ -1,0 +1,13 @@
+{% extends 'layouts/header-footer-2.html'%}
+{% block content%}
+<main>
+  <form method="POST">
+    {% csrf_token %}{{ error }}
+    <h2>Contacto</h2>
+    <label>Titulo<input type="text" name="titulo" required></label>
+    <label>Correo (Para contestarle)<input type="email" name="email" required></label>
+    <label>Asunto <textarea name="description" required></textarea></label>
+    <input type="submit" value="Enviar">
+  </form>
+</main>
+{% endblock %}

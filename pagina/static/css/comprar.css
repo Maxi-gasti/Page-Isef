@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: #e3e3e3;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 100vw;
+  padding-top: 6vh;
+  height: 88vh;
+}
+
+.box {
+  box-sizing: border-box;
+  background: #f4f4f4;
+  border: 1px #666 solid;
+  border-radius: 12px;
+}
+
+.box h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#isef-title {
+  color: #333;
+}
+
+#Pedidos {
+  width: 30vw;
+  height: 60vh;
+}
+
+#Pedidos h2 {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+#Datos {
+  width: 40vw;
+  height: 30vh;
+}
+
+#Datos h2 {
+
+}
+
+#Compra {
+  width: 40vw;
+  height: 30vh;
+  margin-bottom: 5vh;
+}
+
+#Compra h2 {
+  padding-left: 5%;
+  border-bottom: 1px #666 solid;
+  padding-bottom: 5px;
+}

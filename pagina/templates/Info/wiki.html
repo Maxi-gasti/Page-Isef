@@ -1,0 +1,76 @@
+    {% extends 'layouts/header-footer-2.html' %}
+    {% block content %}
+    <section id="main">
+      <aside>
+        <h2>Contenido</h2>
+        <a href="#ISEF"><h3>Isef</h3></a>
+        <a href="#PRINCIPIOS_FUNDAMENTALES"><h3><span>1.</span> Principios Fundamentales</h3></a>
+        <a href="#SIMPLICIDAD"><h4><span>1.1</span> Simplicidad</h4></a>
+        <a href="#MODERNIDAD"><h4><span>1.2</span> Modernidad</h4></a>
+        <a href="#PRAGMATISMO"><h4><span>1.3</span> Pragmatismo</h4></a>
+        <a href="#ENFOQUE_US"><h4><span>1.4</span> Enfoque en el Usuario</h4></a>
+        <a href="#VERSATILIDAD"><h4><span>1.5</span> Versatilidad</h4></a>
+        <a href="#PRINCIPIOS_FUNDAMENTALES"><h3><span>1.</span> Principios Fundamentales</h3></a>
+        <a href="#PRIMEROS_AÑOS"><h4><span>2.1</span> Los Primeros Años (2015–2017)</h4></a>
+        <a href="#LA_ERA_INTERMEDIA"><h4><span>2.2</span> La Era Intermedia (2018–2020)</h4></a>
+        <a href="#NACIMIENTO_ISEF"><h4><span>2.3</span> Nacimiento del ISEF Hub (2021)</h4></a>
+        <a href="#RAY_TRACING"><h4><span>2.4</span> La Llegada del Ray Tracing en Tiempo Real (2022)</h4></a>
+        <a href="#ISEF_STUDIO"><h4><span>2.5</span> ISEF Studio (2023)</h4></a>
+        <a href="#CODIGO_ABIERTO"><h4><span>2.6</span> La Transición a Código Abierto (2024)</h4></a>
+        <a href="#FIN_SOPORTE"><h4><span>2.7</span> Fin del Soporte para 32 bits (2025)</h4></a>
+        <a href="#REFORMA_LIDERAZGO"><h4><span>2.8</span> La Reforma del Liderazgo (2026)</h4></a>
+        <a href="#ERA_DESCENTRALIZADA"><h4><span>2.9</span> La Era Descentralizada (2027–Presente)</h4></a>
+      </aside>
+      <main>
+        <h1 id="ISEF">Isef</h1>
+        <p>ISEF (acrónimo de Integrated Simulation and Editing Framework) es un software profesional de modelado 3D, animación y simulación desarrollado por la empresa ficticia Nexus Dynamics. Diseñado para artistas digitales, ingenieros y desarrolladores, ISEF combina una interfaz minimalista con herramientas avanzadas, ofreciendo un equilibrio único entre usabilidad y potencia técnica.</p>
+        <h2 id="PRINCIPIOS_FUNDAMENTALES"><span>1.</span> Principios Fundamentales</h2>
+        <h3 id="SIMPLICIDAD"><span>1.1</span> Simplicidad</h3>
+        <p>ISEF fue diseñado bajo la filosofía de que las herramientas 3D profesionales no deberían requerir entrenamiento extensivo. Su interfaz sigue un enfoque de "complejidad progresiva": las funciones básicas son accesibles de inmediato, mientras que las avanzadas permanecen descubribles sin saturar el espacio de trabajo. Decisiones clave, como la adopción de una barra de herramientas sensible al contexto (que cambia según la herramienta activa) y un editor de materiales/nodos unificado, buscan reducir la carga cognitiva. A diferencia de otros programas de creación 3D, ISEF evita abrumar con menús interminables, optando por un panel de búsqueda inteligente (similar al menú F3 de Blender, pero con sugerencias asistidas por IA).</p>
+        <h3 id="MODERNIDAD"><span>1.2</span> Modernidad</h3>
+        <p>La arquitectura de ISEF aprovecha al máximo el hardware y software contemporáneos. Fue uno de los primeros suites 3D en adoptar:</p>
+        <p>➤  Renderizado en tiempo real basado en Vulkan</p>
+        <p>➤  Denoising mediante aprendizaje automático acelerado por hardware.</p>
+        <p>➤  Caché determinista de simulaciones (para recalcular sin variaciones aleatorias).
+    También fue pionero en edición colaborativa en la nube, permitiendo que varios artistas trabajen en la misma escena con latencia mínima. Su API en Python 3.10+ y sistema de plugins en WebAssembly aseguran compatibilidad con flujos de trabajo modernos.</p>
+        <h3 id="PRAGMATISMO"><span>1.3</span> Pragmatismo</h3>
+        <p>ISEF se adapta a diferentes industrias sin imponer un flujo de trabajo rígido:</p>
+        <p>➤ Desarrolladores de videojuegos usan presets de exportación para UE5/Unity con un clic.</p>
+        <p>➤ Estudios de VFX aprovechan su integración con Alembic/USD para intercambiar datos con Houdini y Maya.</p>
+        <p>➤ Ingenieros dependen de su ajuste de precisión tipo CAD y soporte para archivos STEP.
+Un ejemplo es su "Sistema de Deshíbrido", que permite tanto deshacer lineal (para artistas tradicionales) como navegación por historial nodal (para flujos procedurales).</p>
+        <h3 id="ENFOQUE_US"><span>1.4</span> Enfoque en el Usuario</h3>
+        <p>El desarrollo de ISEF es guiado por la comunidad, con RFCs (Solicitudes de Comentarios) públicas para funciones importantes. Los cambios en la interfaz se prueban en ramas beta optativas, donde los usuarios votan por diseños. También incluye:</p>
+        <p>➤ Tutoriales interactivos que se adaptan al nivel de habilidad.</p>
+        <p>➤ Un asistente de IA para solución de problemas, entrenado con datos de los foros oficiales.</p>
+        <h3 id="VERSATILIDAD"><span>1.5</span> Versatilidad</h3>
+        <p>ISEF evita encasillarse en un solo nicho. Su sistema modular de plugins lo hace útil como:</p>
+        <p>Alternativa a ZBrush (con esculpido dinámico).</p>
+        <p>"Houdini Lite" (mediante nodos de geometría procedural).</p>
+        <p>Herramienta de visualización CAD (con soporte para NURBS).</p>
+        <p>Suite de motion graphics (gracias a su compositor integrado). Esta flexibilidad lo hace popular entre creadores independientes que buscan una solución todo-en-uno.</p>
+        <h2 id="DESARROLO_HISTORICO"><span>2.</span> Desarrollo Histórico</h2>
+        <h3 id="PRIMEROS_AÑOS"><span>2.1</span> Los Primeros Años (2015–2017)</h3>
+        <p>ISEF comenzó como un proyecto interno de Nexus Dynamics, una startup fundada por exingenieros de Autodesk y SideFX. Los primeros prototipos se centraron en modelado basado en vóxeles (inspirado en MagicaVoxel) y renderizado PBR en tiempo real. Una decisión polémica fue evitar el modelado poligonal tradicional, usando en su lugar campos de distancia (SDFs)—una idea que luego se revirtió por presión de la industria.</p>
+        <h3 id="LA_ERA_INTERMEDIA"><span>2.2</span> La Era Intermedia (2018–2020)</h3>
+        <p>El lanzamiento de la v1.0 (2018) introdujo un sistema híbrido de polígonos/SDFs y los "Flow Nodes" (un sistema de scripting visual para artistas). La versión 1.5 (2019) agregó simulaciones de fluidos aceleradas por GPU, compitiendo con RealFlow. Para 2020, ISEF ganó terreno en visualización arquitectónica gracias a su importador de .DWG y optimizador de iluminación basado en IA.</p>
+        <h3 id="NACIMIENTO_ISEF"><span>2.3</span> Nacimiento del ISEF Hub (2021)</h3>
+        <p>Para competir con Unity Asset Store y Unreal Marketplace, se lanzó el ISEF Hub, un repositorio de plugins, materiales y tutoriales. Innovó con "Activos Vivos"—modelos procedurales que se adaptan a la escala (ej: un generador de edificios podía crear desde una cabaña hasta un rascacielos).</p>
+        <h3 id="RAY_TRACING"><span>2.4</span> La Llegada del Ray Tracing en Tiempo Real (2022)</h3>
+        <p>Con las RTX 40 de NVIDIA, ISEF fue de los primeros en soportar DLSS 3.0 en el viewport, mejorando drásticamente el rendimiento. También introdujo "Materiales Neuronales", que usan IA para simular superficies complejas (como óxido o tela) sin texturas pesadas.</p>
+        <h3 id="ISEF_STUDIO"><span>2.5</span> ISEF Studio (2023)</h3>
+        <p>Dirigido a estudios, ISEF Studio incluyó:</p>
+        <p>Renderizado distribuido en la nube.</p>
+        <p>Integración con control de versiones (Git LFS).</p>
+        <p>Sistema de "tomas" al estilo Cinema4D para gestionar variaciones. El modelo de suscripción generó controversia, pero luego se estabilizó con una opción de licencia perpetua.</p>
+        <h3 id="CODIGO_ABIERTO"><span>2.6</span> La Transición a Código Abierto (2024)</h3>
+        <p>Ante el crecimiento de Blender, Nexus Dynamics liberó el núcleo de ISEF, manteniendo solo herramientas de IA y colaboración como privativas. Esto generó forks como ISEF-Community (enfocado en Linux) y BISEF (un puente con Blender).</p>
+        <h3 id="FIN_SOPORTE"><span>2.7</span> Fin del Soporte para 32 bits (2025)</h3>
+        <p>Citando la adopción de Apple Silicon y Windows ARM, ISEF dejó de soportar 32 bits. Los usuarios podían seguir ejecutando versiones antiguas via Rosetta 2/WINE, pero las nuevas funciones quedaron restringidas a x86_64/ARM64.</p>
+        <h3 id="REFORMA_LIDERAZGO"><span>2.8</span> La Reforma del Liderazgo (2026)</h3>
+        <p>Tras polémicas por decisiones unilaterales (como el rediseño controvertido de la v4.0), Nexus Dynamics adoptó un modelo de gobernanza meritocrático. El primer Comité Técnico Electo incluyó a un representante de game dev, un artista de VFX y un defensor del código abierto.</p>
+        <h3 id="ERA_DESCENTRALIZADA"><span>2.9</span> La Era Descentralizada (2027–Presente)</h3>
+        <p>El desarrollo se migró a GitLab, con un sistema de votación pública para priorizar funciones. El programa "ISEF Labs" permite probar tecnologías experimentales (ej: física asistida por computación cuántica) antes de su lanzamiento oficial.</p>
+      </main>
+    </section>
+{% endblock %}

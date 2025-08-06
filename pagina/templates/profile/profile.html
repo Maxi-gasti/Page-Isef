@@ -1,0 +1,17 @@
+{% extends 'layouts/header-footer-2.html'%}
+{% block content%}
+<main>
+  <h1>Bienvenido {{ user.username }}!</h1>
+  <p>Correo: {{ user.email }}</p>
+  <p>Miembro desde: {{ user.date_joined }}</p>
+  {% for plan in planS %}
+    <p>Tienes Plan Solid! desde: {{ plan.buyTime }}</p>
+  {% endfor %}
+  {% for plan in planP %}
+    <p>Tienes Plan Premium! desde: {{ plan.buyTime }}</p>
+  {% endfor %}
+  <div class="button">
+    <a href={% url 'logout' %}><p><span>Logout<span></p></a>
+  </div>
+</main>
+{% endblock %}

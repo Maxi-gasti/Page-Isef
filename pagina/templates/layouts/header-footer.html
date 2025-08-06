@@ -1,0 +1,179 @@
+<style>
+header {
+  position: fixed;
+  z-index:22;
+  box-sizing: border-box;
+  width: 100vw;
+  text-align: left;
+  color: #333;
+  background: #f4f4f4;
+}
+
+header h3 {
+  display: inline-block;
+}
+
+header div {
+  display: inline-flex;
+  justify-content: right;
+  box-sizing: border-box;
+  width: 50vw;
+}
+
+header div a {
+  text-decoration: none;
+  color: #333;
+}
+
+header div h3 {
+  text-align: right;
+  padding: 0 2vw;
+  font-size: 16px;
+}
+
+#isef-title {
+  box-sizing: border-box;
+  padding-left: 3vw;
+  width: 49vw;
+  margin: 10px 0;
+}
+
+
+/* ------------------- FOOTER SECTION ------------------- */
+
+footer {
+    background: #222;
+    padding: 5vh 10vw;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #c4c4c4;
+    font-weight: 600;
+    text-align: left;
+}
+
+.footer-box {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-box-section {
+    width: 30%;
+    margin: auto;
+    background-color: #222;
+}
+
+#footer-box-section-1 {
+    margin-left: 0;
+}
+
+.footer-box-links {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #222;
+    text-align: center;
+}
+
+.footer-link-x,
+.footer-link-yt,
+.footer-link-reddit,
+.footer-link-instagram,
+.footer-link-tiktok {
+    margin: 10px 20px;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+}
+
+.footer-link-x {
+    margin-left: 0;
+}
+
+.footer-box-section a {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.footer-box-section a:visited, .footer-box-section a:link {
+    color: #d4d4d4;
+}
+
+.footer-box-links a {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.copyright-text {
+    padding-left: 10px;
+    font-size: 0.8em;
+    color: #a4a4a4;
+    border-left: 2px solid #4f4f4f;
+}
+
+</style>
+
+<header style="top: 0px">
+  <h3 id="isef-title">ISEF</h3>
+  <div>
+    <a href="/download"><h3>Downloads</h3></a>
+    <a href="{% url 'contact' %}"><h3>Contact</h3></a>
+    {% if user.is_authenticated %}
+    <a href="{% url 'profile' %}"><h3>Profile</h3></a>
+    {% else%}
+    <a href="{% url 'registro' %}"><h3>Sign up</h3></a>
+    {% endif %}
+  </div>
+</header>
+{% block content %}
+{% endblock %}
+
+<footer>
+  <div class="footer-box">
+    <div class="footer-box-section" id="footer-box-section-1">
+      <a href="{% url 'work' %}">
+        <p>Terminos y Condiciones</p>
+      </a>
+      <a href="{% url 'work' %}">
+        <p>Proyectos</p>
+      </a>
+      <a href="{% url 'work' %}">
+        <p>Comunicate con nosotros</p>
+      </a>
+    </div>
+    <div class="footer-box-section">
+      <a href="{% url 'work' %}">
+        <p>FAQ</p>
+      </a>
+      <a href="{% url 'work' %}">
+        <p>Ayuda al usuario</p>
+      </a>
+      <a href="{% url 'work' %}">
+        <p>Calificarnos</p>
+      </a>
+    </div>
+  </div>
+  <div class="footer-box-links">
+    <a href="https:\\X.com" >
+      <img class="footer-link-x" src="../../static/images/X.png">
+    </a>
+    <a href="https:\\youtube.com" >
+      <img class="footer-link-yt" src="../../static/images/YT.png">
+    </a>
+    <a href="https:\\reddit.com" >
+      <img class="footer-link-reddit" src="../../static/images/RD.png">
+    </a>
+    <a href="https:\\instagram.com" >
+      <img class="footer-link-instagram" src="../../static/images/IG.png">
+    </a>
+    <a href="https:\\tiktok.com" >
+      <img class="footer-link-tiktok" src="../../static/images/TT.png">
+    </a>
+  </div>
+  <p class="copyright-text">Todos los derechos reservados - Copyright 2025</p>
+</footer>

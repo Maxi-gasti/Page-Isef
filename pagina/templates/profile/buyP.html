@@ -1,0 +1,22 @@
+<html lang="es">
+  <head>
+    <title>Isef</title>
+    <link rel="stylesheet" href="../static/css/register.css">
+  </head>
+  <body>
+    <!-- meter esto en un layout-->
+    {% extends 'layouts/header-footer-2.html'%}
+    {% block content%}
+    <main>
+      <form method="POST">
+        {% csrf_token %}{{ error }}
+        <h2>Comprar Plan Premium</h2>
+        <p>Esta es una pagina de una empresa ficticia asi que no ponga datos reales por favor.</p>
+        <label>Numero de tarjeta<input type="text" name="card" required></label>
+        <label>Nombre completo<input type="text" name="name" required></label>
+        <input type="submit" value="Conprar">
+      </form>
+    </main>
+  </body>
+</html>
+{% endblock %}

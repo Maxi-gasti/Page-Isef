@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: #e3e3e3;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 5vh 15vw;
+  padding-top: 6vh;
+  height: 88vh;
+}
+
+article {
+  box-sizing: border-box;
+  width: 30vw;
+  background: #f4f4f4;
+  border-radius: 2px;
+}
+
+h1 {
+  padding-left: 7vw;
+  padding-top: 3vh;
+  text-align: center;
+}
+
+h2, .price {
+  padding-top: 5vh;
+  text-align: center;
+  margin: 0 15%;
+  border-bottom: 1px #3333 solid;
+}
+
+ul {
+  margin: 20px 0;
+}
+
+li {
+  list-style: none;
+  padding: 3px 0;
+  padding-right: 44px;
+}
+
+.price {
+  padding-top: 1vh;
+  border: none;
+  border-top: 1px #3333 solid;
+}
+
+.button {
+  box-sizing: border-box;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 8vw;
+  height: 4vh;
+  color: #333;
+  border: 1px #333 solid;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #333;
+}
+
+.button a:hover {
+  color: #f4f4f4;
+}
+#isef-title {
+  color: #f4f4f4;
+}

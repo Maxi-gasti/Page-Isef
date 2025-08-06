@@ -1,0 +1,49 @@
+    <!-- meter esto en un layout-->
+    {% extends 'layouts/header-footer-2.html'%}
+    {% block content%}
+    <main>
+      <h1>Descargas</h1>
+      <div class="content">
+        <article>
+          <div>
+            <h2>Windows<h2>
+            <div class="type-download">
+                <img src="../static/images/windows.png" class="logo"><span>Version 2.19.2-AF-x86</span><a href="../static/Things/Windows.txt" download><img src="../static/images/download-arrow.png" class="arrow-img"></a>
+            </div>
+          </div>
+          <div>
+            <h2>Linux<h2>
+            <div class="type-download">
+                <img src="../static/images/linux.png" class="logo"><span>Version 2.12-241-2-LX-x86</span><a href="../static/Things/Linux.txt" download><img src="../static/images/download-arrow.png" class="arrow-img"></a>
+            </div>
+          </div>
+          <div>
+            <h2>Apple<h2>
+            <div class="type-download">
+                <img src="../static/images/apple.png" class="logo"><span>Version 2.3.5-AP-x86</span><a href="../static/Things/macOS.txt" download><img src="../static/images/download-arrow.png" class="arrow-img"></a>
+            </div>
+          </div>
+        </article>
+        <aside>
+          <div>
+            <h3>Requisitos minimos</h3>
+            <p>- OS Windows 8.1 (64-bit)</p>
+            <p>- CPU  4 cores with SSE4.2 support</p>
+            <p>- RAM 8 GB</p>
+            <p>- GPU 2 GB VRAM with OpenGL 4.3</p>
+            <div class="button">
+                <a href="/requeriments"><p><span>Ver mas..<span></p></a>
+            </div>
+          </div>
+          {% if not user.is_authenticated %}
+          <div>
+            <h3>Registrate para iniciar sesion en Isef<h3>
+            <div class="button">
+                <a href="/register"><p><span>Registrarse<span></p></a>
+            </div>
+          </div>
+          {% endif %}
+        </aside>
+      </div>
+    </main>
+{% endblock %}

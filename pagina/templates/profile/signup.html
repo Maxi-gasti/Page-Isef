@@ -1,0 +1,16 @@
+{% extends 'layouts/header-footer-2.html'%}
+{% block content %}
+    <main>
+      <form method="POST">
+        {% csrf_token %}{{ error }}
+        <h2>Registro</h2>
+        
+        <label>NOMBRE <input type="text" name="username" required></label>
+        <label>email <input type="email" name="email" required></label>
+        <label>CONTRASEÑA<input type="password" name="password1" required></label>
+        <label>CONFIRMAR CONTRASEÑA<input type="password" name="password2" required></label>
+        <a href="{% url 'signin' %}"><span>ya tienes una cuenta? inicia sesion!</span></a>
+        <input type="submit" value="Registrarse">
+      </form>
+    </main>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'layouts/header-footer-2.html'%}
+{% block content%}
+    <main>
+      <form method="POST">
+        {% csrf_token %}{{ error }}
+        <h2>Iniciar Sesion</h2>
+        <label>NOMBRE <input type="text" name="username" required></label>
+        <label>CONTRASEÑA<input type="password" name="password" required></label>
+        <input type="submit" value="Confirmar">
+      </form>
+    </main>
+{% endblock %}

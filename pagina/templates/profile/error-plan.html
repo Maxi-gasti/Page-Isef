@@ -1,0 +1,9 @@
+{% extends 'layouts/header-footer-2.html'%}
+{% block content%}
+<main>
+  <h1 style="border: none; text-align:center;">Lo sentimos pero tu cuenta ya tiene este plan comprado!</h1>
+  <div class="button" style="margin: auto">
+    <a href={% url 'plans' %}><p><span>Volver<span></p></a>
+  </div>
+</main>
+{% endblock %}

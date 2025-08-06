@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Isef</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+  </head>
+  <body>
+    <!-- meter esto en un layout-->
+    {% extends 'layouts/header-footer.html'%}
+    {% block content%}
+      <section class="welcome">
+        <h1>ISEF</h1>
+        <h3>Un estilo de vida, mas legible, mas simple.</h3>
+        <div class="box start-button">
+          <a href="/download"><p>Descarga ahora</p></a>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-gallery">
+          <article class="box-about">
+            <h2>Que es Isef ?</h2>
+            <h3>Isef es un software dedicado a la edicion de objetos 3D, animaciones y simulaciones</h3>
+            <h3>Nuestras herramientas buscan legibilidad y minimalismo y a su vez gran cantidad de posibles combinaciones</h3>
+            <h3>ISEF es GRATIS, pero para nuestra sostenibilidad ofresemos 2 planes los cuales incluyen funciones experimentales para profesionales experimentados</h3>
+            <div class="box button"><a href="/register">Registrate</a></div>
+          </article>
+          <article class="box-about-info">
+            <img src="../static/images/as.gif">
+          </article>
+        </div>
+      </section>
+
+      <section class="articles">
+        <h2 class="articles-title">Descubrenos</h2>
+        <div class="gallery">
+          <article>
+            <img src="../static/images/3D-2.png">
+            <h3>Wiki</h3>
+            <p class="article-description">Contamos con informacion e tutoriales proporcionadas por la comunidad para ayudarte en las dudas que tengas</p>
+            <div class="box article-button">
+              <a href="/wiki"><p>Wikipedia</p></a>
+            </div>
+          </article>
+          <article>
+            <img src="../static/images/img2.jpg">
+            <h3>Isef Solid</h3>
+            <p class="article-description">Con nuestro plan basico Solid podras visualizar tus nuevas metas e ideas</p>
+            <div class="box article-button">
+              <a href={% url 'plans' %}><p>Consigue Solid</p></a>
+            </div>
+          </article>
+          <article>
+            <img src="../static/images/img3.jpg">
+            <h3>Isef Premium</h3>
+            <p class="article-description">Con nuestro plan Premium podras utilizar toda la variedad de herramientas que proveemos</p>
+            <div class="box article-button">
+              <a href={% url 'plans' %}><p>Consigue Premium</p></a>
+            </div>
+          </article>
+          <article>
+            <img src="../static/images/img4.jpg">
+            <h3>Compatibilidad</h3>
+            <p class="article-description">Isef es compatible con la mayoria de dispositivos en el mercado, con diferentes versiones para cada una</p>
+            <div class="box article-button">
+              <a href="/requeriments"><p>Requisitos</p></a>
+            </div>
+          </article>
+        </div>
+      </section>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'layouts/header-footer-2.html' %}
+{% block content %}
+<main>
+  <article>
+    <h2>Solid</h2>
+    <ul>
+      <li>✅ Acceso completo al núcleo de ISEF (modelado, animación básica, simulaciones físicas).</li>
+      <li>✅ Renderizado en tiempo real (sin GPU Ray Tracing avanzado).</li>
+      <li>✅ Actualizaciones de seguridad y corrección de bugs.</li>
+      <li>✅ Uso comercial permitido (con marca de agua en renders 4K+).</li>
+      <li>❌ Sin herramientas de IA (upscaling, Neural Materials).</li>
+      <li>❌ Sin colaboración en la nube (trabajo local únicamente).</li>
+    </ul>
+    <h3 class="price">USD 4.99$</h3>
+    <div class="button">
+      <a href={% url 'buy' %}><p><span>Ordenar<span></p></a>
+    </div>
+  </article>
+  <article>
+    <h2>Premium</h2>
+    <ul>
+      <li>✅ Renderizado con DLSS 3.5 y Ray Tracing en tiempo real.</li>
+      <li>✅ Acceso a ISEF Studio (herramientas de IA: auto-rigging, denoiser neuronal).</li>
+      <li>✅ Colaboración en la nube (hasta 5 usuarios simultáneos).</li>
+      <li>✅ Biblioteca exclusiva de materiales y assets (10,000+ recursos premium).</li>
+      <li>✅ Licencia perpetua disponible (pago único, sin actualizaciones mayores).</li>
+      <li>✅ Integración con Unreal Engine/Unity (exportación directa con LODs automáticos).</li>
+    </ul>
+    <h3 class="price">USD 9.99$</h3>
+    <div class="button">
+      <a href={% url 'buyP' %}><p><span>Ordenar<span></p></a>
+    </div>
+  </article>
+</main>
+{% endblock %}

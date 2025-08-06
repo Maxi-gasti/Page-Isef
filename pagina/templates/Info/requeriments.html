@@ -1,0 +1,107 @@
+    {% extends 'layouts/header-footer-2.html' %}
+    {% block content %}
+    <main>
+      <h1>Requerimentos de sistema para Isef</h1>
+      <section>
+        <h2>Corre donde sea</h2>
+        <p>Isef es multiplataforma, funciona en todos los sistemas operativos principales. Todas las iniciativas para hacer que Isef funcione en configuraciones específicas son bienvenidas, pero solo podemos ofrecer soporte oficial para aquellas utilizadas por desarrolladores activos. Las arquitecturas soportadas son x64 y arm64. Para Windows, hay un instalador disponible si deseas añadir un icono en el escritorio, registrar extensiones de archivo .blend, etc.</p>
+        <h2>Verdaderamente Portable</h2>
+        <p>Ya sea en una memoria USB, en una carpeta en tu escritorio o instalado por completo, Isef funciona al instante (o sin configuración previa). No requiere instalación ni conexión a Internet. Totalmente portable, llévalo contigo a donde quieras. ¡Consulta más sobre instalaciones portables en el manual!</p>
+        <h2>Compatible</h2>
+        <p>Isef busca mantener la mayor compatibilidad posible con versiones antiguas e incluso futuras. En ocasiones, las nuevas funciones requieren cambios disruptivos.</p>
+      </section>
+      <section>
+        <h2>Windows</h2>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Minimo</th>
+              <th colspan="2">Recomendado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>OS</th>
+              <th>Windows 8.1 (64-bit)</th>
+              <th colspan="2">Windows 10 or Windows 11</th>
+            </tr>
+            <tr></tr>
+              <th>CPU</th>
+              <th>4 cores with SSE4.2 support</th>
+              <th colspan="2">8 cores</th>
+            <tr></tr>
+              <th>RAM</th>
+              <th>8 GB</th>
+              <th colspan="2">32 GB</th>
+            <tr></tr>
+              <th>GPU</th>
+              <th>2 GB VRAM with OpenGL 4.3</th>
+              <th colspan="2">8 GB VRAM</th>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Linux</h2>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Minimo</th>
+              <th colspan="2">Recomendado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>OS</th>
+              <th>Distro with glibc 2.28 (64-bit)</th>
+              <th colspan="2">glibc 2.28 or newer</th>
+            </tr>
+            <tr>
+              <th>CPU</th>
+              <th>4 cores with SSE4.2 support</th>
+              <th colspan="2">8 cores</th>
+            </tr>
+            <tr>
+              <th>RAM</th>
+              <th>8 GB</th>
+              <th colspan="2">32 GB</th>
+            </tr>
+            <tr>
+              <th>GPU</th>
+              <th>2 GB VRAM with OpenGL 4.3</th>
+              <th colspan="2">8 GB VRAM</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Mac OS</h2>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Minimo</th>
+              <th colspan="2">Recomendado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>OS</th>
+              <th>macOS 11.2 (Big Sur)</th>
+              <th colspan="2">macOS 15 (Sequoia)</th>
+            </tr>
+            <tr></tr>
+              <th>CPU</th>
+              <th>Apple Silicon or Intel</th>
+              <th colspan="2">Apple Silicon</th>
+            <tr></tr>
+              <th>RAM</th>
+              <th>8 GB</th>
+              <th colspan="2">32 GB</th>
+            <tr></tr>
+              <th>GPU</th>
+              <th>GPU with Metal 2.2</th>
+              <th colspan="2"></th>
+          </tbody>
+        </table>
+      </section>
+    </main>
+{% endblock %}
